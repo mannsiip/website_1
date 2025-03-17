@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB3</title>
+    <style>
+        body{background-color: rgb(43, 43, 43);}
+        
+        * {box-sizing: border-box}
+
+        .grid-container {display: grid; grid-template-areas: 'header header header header header header' 'menu main main main main right' 'footer footer footer footer footer footer'; gap: 10px; background-color: rgb(43, 43, 43); padding: 10px;}
+        
+        .grid-container > div {padding: 10px;font-size: 16px;}
+
+        .item1 {grid-area: header; background-color: deeppink;text-align: center;color:antiquewhite;}
+
+        .item1 > h1 {font-size: 40px;}
+
+        .item2 { grid-area: menu;}
+
+        .item2 ul {list-style-type: none;}
+
+        .item2 li {padding: 8px;margin-bottom: 7px;background-color: deeppink; color: antiquewhite;}
+
+        .item2 li:hover {background-color: rgb(250, 132, 195);}
+
+        .item3 {grid-area: main;}
+
+        .item3 > h1 {font-size: 30px; margin-bottom: 7px;color: rgb(250, 132, 195);}
+
+        .item3 > p {margin-bottom: 7px; color: antiquewhite;}
+
+        .item4 {grid-area: right; border: deeppink; padding: 10px;}
+
+        .item5 {grid-area: footer; background-color: deeppink; color: antiquewhite; text-align: center;}
+
+        @media only screen and (max-width: 600px) { .item1{grid-area: 1/span 6;}
+                                                    .item2{grid-area: 2/span 6;}
+                                                    .item3{grid-area: 3/span 6;}
+                                                    .item4{grid-area: 4/span 6;}
+                                                    .item5{grid-area: 5/span 6;}
+        }
+
+        img {max-width: 100%; height: auto;}
+        </style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+    <div class="item1"><h1>WONDERS OF THE WORLD</h1></div>
+
+    <div class="item2"><ul>
+                           <li>Taj Mahal</li>
+                           <li>The Great Wall of China</li>
+                           <li>Chichen Itza</li>
+                           <li>Petra</li>
+                           <li>Machu Picchu</li>
+                           <li>Christ the Redeemer</li>
+                           <li>The Colosseum</li>
+                        </ul>
+    </div>
+
+    <div class="item3"><h1>7 wonders</h1><p>In 2000 a Swiss foundation launched a campaign to determine the New Seven Wonders of the World. Given that the original Seven Wonders list was compiled in the 2nd century BCE—and that only one entrant is still standing (the Pyramids of Giza)—it seemed time for an update. And people around the world apparently agreed, as more than 100 million votes were cast on the Internet or by text messaging. The final results, which were announced in 2007, were met with cheers as well as some jeers—a number of prominent contenders, such as Athens’s Acropolis, failed to make the cut. Do you agree with the new list?</p></div>
+    
+    <div class="item4"><img src="7wond.png" width="300" height="417"></div>
+
+    <div class="item5"><p>source : https://www.britannica.com/list/new-seven-wonders-of-the-world</p></div>
+</div>
+
+
+
+<body>
+    
+</body>
+</html>
